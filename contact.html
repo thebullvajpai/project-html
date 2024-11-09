@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-image: url("photo/tiranga-bg.jpg");
+        }
+
+        .contact-container {
+            width: 80%;
+            max-width: 800px;
+            background-image: url("photo/applyonline-bg.jpg");
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .contact-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-container label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-container textarea,
+        .contact-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your feedback! We will get back to you soon.');
+            window.location.href = 'home.html';
+        }
+    </script>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <header>
+        <img class="strip" src="photo/indian-strip.png" alt="">
+
+        <div class="header">
+            <img class="bgi" src="photo/header.jpg" alt="">
+            <img class="fgi" src="photo/logo.png" alt="">
+            <img class="fgi2" src="photo/g-20-logo.png" alt="">
+            <img src="photo/national-emblem-india.png" alt="" class="fgi3">
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html"> Home</a></li>
+                <li><a href="">Life in Army</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form onsubmit="handleSubmit(event)">
+            <label for="feedback">Feedback</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:vaajpaai@gmail.com">vaajpaai@gmail.com</a></p>
+            <p>Instagram: <a href="https://instagram.com/vaajpaai" target="_blank">@vaajpaai</a></p>
+            <p>Contact Number: +91 1234567890</p>
+            <div class="social-links">
+                <a href="https://instagram.com/vaajpaai" target="_blank"><img
+                        src="photo/Instagram_logo_2022.svg.webp"
+                        alt="Instagram Logo" style="width:50px;height:50px;">
+                </a>
+                <a href="https://twitter.com/vaajpaai" target="_blank"><img
+                        src="photo/twitter.avif"
+                        alt="Twitter Logo" style="width:50px;height:50px;">
+                </a>
+                <a href="https://facebook.com/not_available" target="_blank"><img
+                        src="photo/Facebook_logo_(square).png"
+                        alt="Facebook Logo" style="width:50px;height:50px;">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("photo/tiranga-bg.jpg");
+            /* background-color: #f0f0f0; */
+        }
+        .signup-container {
+            border: 2px solid #ccc;
+            padding: 80px;
+            border-radius: 10px;
+            /* background-color: #fff; */
+            background-image: url("photo/applyonline-bg.jpg");
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .signup-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .signup-container label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .signup-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .signup-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .signup-container p a{
+            padding-top: 23px;
+            text-decoration: none;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+
+        }
+        </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form  onsubmit="handleSubmit(event)">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        <p><a href="signin.html">Already a user?</a></p>
+    </div>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Sign up completed!');
+            window.location.href = 'home.html'; 
+        }
+    </script>
+</body>
+</html>
